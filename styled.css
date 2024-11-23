@@ -1,0 +1,92 @@
+/* Global Variables */
+:root {
+    --primary-bg-color: #2c2c2c;
+    --primary-text-color: white;
+    --highlight-color: #3499b8;
+    --border-radius: 10px;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: silver;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Resume Container */
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px var(--shadow-color);
+    flex-wrap: wrap;
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid var(--highlight-color);
+}
+
+.ProfilePicture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px;
+    color: black;
+    background-color: var(--highlight-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px var(--highlight-color);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
